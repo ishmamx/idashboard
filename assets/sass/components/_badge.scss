@@ -1,0 +1,117 @@
+.badge-primary {
+  background-color: rgba($blue-color, 0.1);
+  color: $blue-color;
+}
+
+.badge-secondary {
+  background-color: rgba($gray-color, 0.1);
+  color: $gray-color;
+}
+
+.badge-success {
+  background-color: rgba($green-color, 0.1);
+  color: $green-color;
+}
+
+.badge-danger {
+  background-color: rgba($red-color, 0.1);
+  color: $red-color;
+}
+
+.badge-warning {
+  background-color: rgba($orange-color, 0.1);
+  color: $orange-color;
+}
+
+.badge-info {
+  background-color: rgba($light-blue-color, 0.1);
+  color: $light-blue-color;
+}
+
+.badge-light {
+  background-color: $base-color5;
+  color: $base-color2;
+}
+
+.badge-dark {
+  color: $base-color1;
+  background-color: rgba($base-color1, 0.1);
+}
+
+.btn {
+  .badge-primary {
+    background-color: $blue-color;
+    color: #fff;
+  }
+
+  .badge-secondary {
+    background-color: $gray-color;
+    color: #fff;
+  }
+
+  .badge-success {
+    background-color: $green-color;
+    color: #fff;
+  }
+
+  .badge-danger {
+    background-color: $red-color;
+    color: #fff;
+  }
+
+  .badge-warning {
+    background-color: $orange-color;
+    color: #fff;
+  }
+
+  .badge-info {
+    background-color: $light-blue-color;
+    color: #fff;
+  }
+
+  .badge-dark {
+    color: #fff;
+    background-color: $base-color1;
+  }
+}
+
+.badge {
+  font-size: 0.75em;
+  font-weight: 400;
+  line-height: 1em;
+  padding: 0.5em 0.58em;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.badge.badge-pill {
+  border-radius: 12px;
+  text-transform: initial;
+  padding: 0.5em 0.7em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  .badge {
+    font-weight: inherit;
+    padding: 0.25em 0.5em;
+  }
+}
+
+.up-badge {
+  position: relative;
+
+  .badge {
+    min-width: 25px;
+    border-radius: 50%;
+    font-size: 14px;
+    position: absolute;
+    right: -10px;
+    top: -10px;
+    padding: 0.4em 0.4em;
+  }
+}

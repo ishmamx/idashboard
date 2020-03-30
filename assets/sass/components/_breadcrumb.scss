@@ -1,0 +1,15 @@
+.breadcrumb {
+  padding: 13px 15px;
+  border-radius: 4px;
+  background-color: $base-color5;
+
+  .breadcrumb-item.active {
+    color: $base-color2;
+  }
+  a {
+    color: $blue-color;
+    &:hover {
+      color: rgba($blue-color, 0.8);
+    }
+  }
+}

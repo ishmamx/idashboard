@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <!-- Meta Tags -->
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="author" content="YooKits" />
+  <!-- Page Title -->
+  <title>Components - Dropdowns</title>
+  <!-- Favicon Icon -->
+  <link rel="icon" href="../assets/img/favicon.png">
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" href="../assets/css/bootstrap.min.css" />
+  <link rel="stylesheet" type="text/css" href="../assets/css/iDashboard.css" />
+</head>
+
+<body>
+  <div class="yoo-height-b60 yoo-height-lg-b60"></div>
+  <header class="yoo-header yoo-style1 yoo-sticky-menu">
+    <div class="yoo-main-header">
+      <div class="yoo-main-header-in">
+        <div class="yoo-main-header-left">
+          <a href="index.html" class="yoo-logo-link yoo-light-logo"><img src="assets/img/logo.svg" alt="logo-light" /></a>
+          <!-- For Site Title -->
+          <!-- <span class="yoo-site-title">
+            <a href="index.html">Logo</a>
+          </span> -->
+        </div>
+        <div class="yoo-main-header-right">
+          <div class="yoo-nav-wrap yoo-fade-up">
+            <div class="yoo-nav-toggle">
+              <ion-icon name="ellipsis-vertical"></ion-icon>
+            </div>
+            <nav class="yoo-nav yoo-desktop-nav">
+              <ul class="yoo-nav-list">
+                <li><a href="#"><ion-icon name="albums"></ion-icon> Home</a></li>
+                <li><a href="#"><ion-icon name="cloud"></ion-icon> Contact</a></li>
+              </ul>
+            </nav>
+            <!-- .yoo-nav -->
+          </div>
+          <!-- .yoo-nav-wrap -->
+          <ul class="yoo-ex-nav yoo-style1 yoo-flex yoo-mp0">
+            <li>
+              <div class="yoo-toggle-body yoo-message-area yoo-style1">
+                <span class="yoo-toggle-btn yoo-ex-nav-btn yoo-message-btn">
+                  <ion-icon name="mail"></ion-icon>
+                </span>
+                <div class="yoo-dropdown yoo-notify-dropdown">
+                  <h2 class="yoo-nofify-title">
+                    <span class="yoo-nofify-title-left">Messages</span>
+                    <span class="yoo-nofify-title-right"><a href="#">Mark All as Read</a></span>
+                  </h2>
+                  <ul class="yoo-nofify-list yoo-style1 yoo-mp0">
+                    <li>
+                      <a href="#">
+                        <div class="yoo-nofify-thumb">
+                          <img src="assets/img/user/1.jpg" alt="">
+                        </div>
+                        <div class="yoo-nofify-text">
+                          <h3 class="yoo-nofify-text-head">
+                            Bob Dylan
+                            <span class="yoo-online-status yoo-live"></span>
+                          </h3>
+                          <div class="yoo-msg">
+                            Thank you for purchasing! <br>
+                            When you arrive prepared to negotiate
+                          </div>
+                          <span class="yoo-notify-time">10:23</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="active">
+                        <div class="yoo-nofify-thumb">
+                          <img src="assets/img/user/2.jpg" alt="">
+                        </div>
+                        <div class="yoo-nofify-text">
+                          <h3 class="yoo-nofify-text-head">
+                            David Gilmour
+                            <span class="yoo-online-status"></span>
+                          </h3>
+                          <div class="yoo-msg">
+                            Thank you for purchasing! <br>
+                            When you arrive prepared to negotiate
+                          </div>
+                          <span class="yoo-notify-time">12:23</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="yoo-nofify-thumb">
+                          <img src="assets/img/user/3.jpg" alt="">
+                        </div>
+                        <div class="yoo-nofify-text">
+                          <h3 class="yoo-nofify-text-head">
+                            Jeff Beck
+                            <span class="yoo-online-status yoo-live"></span>
+                          </h3>
+                          <div class="yoo-msg">
+                            Thank you for purchasing! <br>
+                            When you arrive prepared to negotiate
+                          </div>
+                          <span class="yoo-notify-time">Jan 05</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="yoo-nofify-thumb">
+                          <img src="assets/img/user/4.jpg" alt="">
+                        </div>
+                        <div class="yoo-nofify-text">
+                          <h3 class="yoo-nofify-text-head">
+                            Guthrie Govan
+                            <span class="yoo-online-status"></span>
+                          </h3>
+                          <div class="yoo-msg">
+                            Thank you for purchasing! <br>
+                            When you arrive prepared to negotiate
+                          </div>
+                          <span class="yoo-notify-time">Jan 10</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <div class="yoo-nofify-thumb">
+                          <img src="assets/img/user/5.jpg" alt="">
+                        </div>
+                        <div class="yoo-nofify-text">
+                          <h3 class="yoo-nofify-text-head">
+                            Eric Johnson
+                            <span class="yoo-online-status"></span>
+                          </h3>
+                          <div class="yoo-msg">
+                            Thank you for purchasing! <br>
+                            When you arrive prepared to negotiate
+                          </div>
+                          <span class="yoo-notify-time">Jan 16</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="#" class="yoo-btn yoo-style2">SEE ALL <ion-icon name="chevron-forward"></ion-icon></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="yoo-toggle-body yoo-notice-area yoo-style1">
+                <span class="yoo-toggle-btn yoo-ex-nav-btn yoo-notice-btn">
+                  <ion-icon name="notifications"></ion-icon>
+                  <span class="yoo-ex-nav-label">3</span>
+                </span>
+                <div class="yoo-dropdown yoo-notify-dropdown">
+                  <h2 class="yoo-nofify-title">Notification</h2>
+                  <ul class="yoo-nofify-list yoo-style1 yoo-mp0">
+                    <li>
+                      <a href="#" class="yoo-nofify-list-in">
+                        <div class="yoo-nofify-icon yoo-gray-box">
+                          <ion-icon name="people"></ion-icon>
+                        </div>
+                        <div class="yoo-nofify-text">
+                          <h3 class="yoo-nofify-text-head">Invite your friends to dashboard.</h3>
+                          <span class="yoo-notify-time">5 hour ago</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="yoo-nofify-list-in">
+                        <div class="yoo-nofify-icon yoo-green-box">
+                          <ion-icon name="today"></ion-icon>
+                        </div>
+                        <div class="yoo-nofify-text">
+                          <h3 class="yoo-nofify-text-head">3 Tasks pending this month.</h3>
+                          <span class="yoo-notify-time">6 hour ago</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="yoo-nofify-list-in">
+                        <div class="yoo-nofify-icon yoo-light-blue-box">
+                          <ion-icon name="heart"></ion-icon>
+                        </div>
+                        <div class="yoo-nofify-text">
+                          <h3 class="yoo-nofify-text-head">7 People loved your activity.</h3>
+                          <span class="yoo-notify-time">9 hour ago</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="yoo-nofify-list-in">
+                        <div class="yoo-nofify-icon yoo-gray-box">
+                          <ion-icon name="chatbox"></ion-icon>
+                        </div>
+                        <div class="yoo-nofify-text">
+                          <h3 class="yoo-nofify-text-head">John commented on activity.</h3>
+                          <span class="yoo-notify-time">1 day ago</span>
+                        </div>
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="yoo-nofify-list-in">
+                        <div class="yoo-nofify-icon yoo-blue-box">
+                          <img src="assets/img/user/1.jpg" alt="msg1" />
+                        </div>
+                        <div class="yoo-nofify-text">
+                          <h3 class="yoo-nofify-text-head">Click your picture or add an account.</h3>
+                          <span class="yoo-notify-time">2 days ago</span>
+                        </div>
+                      </a>
+                    </li>
+                  </ul>
+                  <a href="#" class="yoo-btn yoo-style2">SEE ALL <ion-icon name="chevron-forward"></ion-icon></a>
+                </div>
+              </div>
+            </li>
+            <li>
+              <div class="yoo-toggle-body yoo-profile-nav yoo-style1">
+                <div class="yoo-toggle-btn yoo-profile-nav-btn">
+                  <div class="yoo-profile-nav-text">
+                    <span>Welcome,</span>
+                    <h4>Thom Yorke</h4>
+                  </div>
+                  <div class="yoo-profile-nav-img">
+                    <img src="assets/img/profile-pic.png" alt="profile">
+                  </div>
+                </div>
+                <ul class="yoo-dropdown yoo-style1">
+                  <li>
+                    <a href="#"><ion-icon name="person-circle"></ion-icon>My Profile</a>
+                  </li>
+                  <li>
+                    <a href="#"><ion-icon name="settings"></ion-icon>Settings</a>
+                  </li>
+                  <li>
+                    <a href="#"><ion-icon name="videocam"></ion-icon>Upload</a>
+                  </li>
+                  <li>
+                    <a href="#"><ion-icon name="help-circle"></ion-icon>Help</a>
+                  </li>
+                  <li class="yoo-dropdown-cta"><a href="#">Sign Out</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header><!-- .yoo-header -->
+  <div class="yoo-sidebarheader-toggle">
+    <div class="yoo-button-bar1"></div>
+    <div class="yoo-button-bar2"></div>
+    <div class="yoo-button-bar3"></div>
+  </div><!-- .yoo-sidebarheader-toggle -->
+  <div class="yoo-sidebarheader">
+    <div class="yoo-sidebarheader-in" data-scrollbar>
+      <div class="yoo-sidebar-search">
+        <form action="#" class="yoo-search yoo-style1 yoo-search-md">
+          <input type="text" placeholder="Search..." class="yoo-search-input">
+          <button class="yoo-search-submit"><ion-icon name="search"></ion-icon></button>
+          <button class="yoo-voice-btn"><ion-icon name="mic"></ion-icon></button>
+        </form>
+      </div>
+      <div class="yoo-sidebar-nav">
+        <ul class="yoo-sidebar-nav-list yoo-mp0">
+          <li>
+            <a href="index.html" >
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="layers"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Dashboard</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="settings.html">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="create"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Profile Settings</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="calender.html">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="calendar"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Calender</span>
+              </span>
+            </a>
+          </li>
+          <li class="yoo-sidebar-has-children">
+            <a href="#" >
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="person-circle"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Sign In/Sign Up</span>
+              </span>
+            </a>
+            <ul class="yoo-sidebar-nav-dropdown">
+              <li>
+                <a href="login.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">Log In</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="signup.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">Sign Up</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="alerts.html">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="notifications"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Notifications</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="buttons.html">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="albums"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Buttons</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="tables.html">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="cube"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Table</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="forms.html">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="duplicate"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Forms</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="pagination.html">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="trail-sign"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Pagination</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="typography.html">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="text"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Typography</span>
+              </span>
+            </a>
+          </li>
+          <li class="yoo-sidebar-has-children">
+            <a href="#" >
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="cloud"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Components</span>
+              </span>
+            </a>
+            <ul class="yoo-sidebar-nav-dropdown">
+              <li>
+                <a href="badge.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">Badge</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="breadcrumb.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">Breadcrumb</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="card.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">Card</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="carousel.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">Carousel</span>
+                  </span>
+                </a>
+              </li>
+              <li class="active">
+                <a href="dropdowns.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">Dropdowns</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="list-group.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">List Group</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="modal.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">Modal</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="progress.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">Progress</span>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="tooltips.html" >
+                  <span class="yoo-sidebar-link-title">
+                    <span class="yoo-sidebar-link-text">Tooltips</span>
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="icons.html" target="_blank">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="archive"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Icons</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="svgmaps.html">
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="map"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">SVG Maps</span>
+              </span>
+            </a>
+          </li>
+          <li>
+            <a href="documentation.html" >
+              <span class="yoo-sidebar-link-title">
+                <span class="yoo-sidebar-link-icon yoo-style1"><ion-icon name="reader"></ion-icon></span>
+                <span class="yoo-sidebar-link-text">Documentation</span>
+              </span>
+            </a>
+          </li>
+        </ul><!-- .yoo-sidebar-nav-list -->
+      </div>
+    </div>
+  </div><!-- .yoo-sidebarheader -->
+  
+  <div class="yoo-content yoo-style1">
+    <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    <div class="container">
+      <div class="yoo-uikits-heading">
+        <h2 class="yoo-uikits-title">Dropdowns</h2>
+      </div>
+    </div>
+    <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="yoo-card yoo-style1">
+            <div class="yoo-card-heading">
+              <div class="yoo-card-heading-left">
+                <h2 class="yoo-card-title">Basic List</h2>
+              </div>
+              <div class="yoo-card-heading-right">
+                <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#basic-list"><ion-icon name="code"></ion-icon></button>
+                <!-- Code Modal -->
+                <div class="modal fade" id="basic-list">
+                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Basic List</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <ion-icon name="close"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Example single danger button --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-danger dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    Action
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Another action<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Something else here<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-divider"</span><span class="nt">&gt;&lt;/div&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"dropdown-item"</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Separated link<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="yoo-card-body">
+              <div class="yoo-padd-lr-20">
+                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+                  <div class="kit-btns">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary</button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div><!-- /btn-group -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Secondary</button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div><!-- /btn-group -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Success</button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div><!-- /btn-group -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Info</button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div><!-- /btn-group -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Warning</button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div><!-- /btn-group -->
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Danger</button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div><!-- /btn-group -->
+                  </div>
+                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+              </div>
+            </div>
+          </div><!-- .yoo-card -->
+          <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+          <div class="yoo-card yoo-style1">
+            <div class="yoo-card-heading">
+              <div class="yoo-card-heading-left">
+                <h2 class="yoo-card-title">Sizing</h2>
+              </div>
+              <div class="yoo-card-heading-right">
+                <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#sizing"><ion-icon name="code"></ion-icon></button>
+                <!-- Code Modal -->
+                <div class="modal fade" id="sizing">
+                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Sizing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <ion-icon name="close"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Large button groups (default and split) --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-primary btn-lg dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    Large button
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-warning btn-lg"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+    Large split button
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Small button groups (default and split) --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-sm dropdown-toggle"</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    Small button
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"btn btn-secondary btn-sm"</span> <span class="na">type=</span><span class="s">"button"</span><span class="nt">&gt;</span>
+    Small split button
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    ...
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="yoo-card-body">
+              <div class="yoo-padd-lr-20">
+                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+                <div class="">
+                  <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group">
+                      <button class="btn btn-primary btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Large button
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div><!-- /btn-group -->
+                    <div class="btn-group ml-2">
+                      <button type="button" class="btn btn-lg btn-secondary">Large split button</button>
+                      <button type="button" class="btn btn-lg btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div><!-- /btn-group -->
+                  </div><!-- /btn-toolbar -->
+                </div>
+                <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                <div class="">
+                  <div class="btn-toolbar" role="toolbar">
+                    <div class="btn-group">
+                      <button class="btn btn-primary btn-sm dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Small button
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div><!-- /btn-group -->
+                    <div class="btn-group ml-2">
+                      <button type="button" class="btn btn-sm btn-secondary">Small split button</button>
+                      <button type="button" class="btn btn-sm btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="sr-only">Toggle Dropdown</span>
+                      </button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Separated link</a>
+                      </div>
+                    </div><!-- /btn-group -->
+                  </div><!-- /btn-toolbar -->
+                </div>
+                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+              </div>
+            </div>
+          </div><!-- .yoo-card -->
+          <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+          <div class="yoo-card yoo-style1">
+            <div class="yoo-card-heading">
+              <div class="yoo-card-heading-left">
+                <h2 class="yoo-card-title">Dropleft variation</h2>
+              </div>
+              <div class="yoo-card-heading-right">
+                <button type="button" class="yoo-card-btn" data-toggle="modal" data-target="#Dropleft-variation"><ion-icon name="code"></ion-icon></button>
+                <!-- Code Modal -->
+                <div class="modal fade" id="Dropleft-variation">
+                  <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title">Dropleft variation</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <ion-icon name="close"></ion-icon>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Default dropup button --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropup"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    Dropup
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Dropdown menu links --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Split dropup button --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropup"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
+    Split dropup
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle dropdown-toggle-split"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropdown<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Dropdown menu links --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Default dropright button --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropright"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    Dropright
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Dropdown menu links --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Split dropright button --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropright"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
+    Split dropright
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle dropdown-toggle-split"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropright<span class="nt">&lt;/span&gt;</span>
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Dropdown menu links --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+<figure class="highlight"><pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- Default dropleft button --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropleft"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+    Dropleft
+  <span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Dropdown menu links --&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+
+<span class="c">&lt;!-- Split dropleft button --&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"btn-group dropleft"</span> <span class="na">role=</span><span class="s">"group"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary dropdown-toggle dropdown-toggle-split"</span> <span class="na">data-toggle=</span><span class="s">"dropdown"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">aria-expanded=</span><span class="s">"false"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"sr-only"</span><span class="nt">&gt;</span>Toggle Dropleft<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"dropdown-menu"</span><span class="nt">&gt;</span>
+      <span class="c">&lt;!-- Dropdown menu links --&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn btn-secondary"</span><span class="nt">&gt;</span>
+    Split dropleft
+  <span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></figure>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="yoo-card-body">
+              <div class="yoo-padd-lr-20">
+                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+                <!-- Default dropup button -->
+                <div class="btn-group dropup">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropup
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+
+                <!-- Split dropup button -->
+                <div class="btn-group dropup">
+                  <button type="button" class="btn btn-secondary ml-2">
+                    Split dropup
+                  </button>
+                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropdown</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+                <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                <!-- Default dropright button -->
+                <div class="btn-group dropright">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropright
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+
+                <!-- Split dropright button -->
+                <div class="btn-group dropright">
+                  <button type="button" class="btn btn-secondary ml-2">
+                    Split dropright
+                  </button>
+                  <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <span class="sr-only">Toggle Dropright</span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+                <div class="yoo-height-b10 yoo-height-lg-b10"></div>
+                <!-- Default dropleft button -->
+                <div class="btn-group dropleft">
+                  <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropleft
+                  </button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Separated link</a>
+                  </div>
+                </div>
+
+                <!-- Split dropleft button -->
+                <div class="btn-group">
+                  <div class="btn-group dropleft" role="group">
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split ml-2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <span class="sr-only">Toggle Dropleft</span>
+                    </button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Separated link</a>
+                    </div>
+                  </div>
+                  <button type="button" class="btn btn-secondary">
+                    Split dropleft
+                  </button>
+                </div>
+                <div class="yoo-height-b20 yoo-height-lg-b20"></div>
+              </div>
+            </div>
+          </div><!-- .yoo-card -->
+          <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+          
+
+        </div><!-- .col -->
+      </div>
+    </div>
+    <div class="yoo-height-b30 yoo-height-lg-b30"></div>
+    <footer class="yoo-footer yoo-style1">
+      <div class="container">
+        <div class="yoo-footer-content">
+          <div class="yoo-copyride">Made with coffee &amp; love by YooKits ©All rights reserved.</div>
+          <ul class="yoo-footer-nav yoo-mp0 yoo-flex">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div><!-- .yoo-content -->
+
+  <!-- Required Scripts -->
+  <script src="../assets/js/jquery-1.12.4.min.js"></script>
+  <script src="../assets/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/smooth-scrollbar.js"></script>
+  <script src="../assets/js/iDashboard.js"></script>
+  <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>

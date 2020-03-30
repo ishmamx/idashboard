@@ -1,0 +1,74 @@
+.yoo-medias.yoo-style1 {
+  min-height: 30px;
+  position: relative;
+
+  .yoo-media-img {
+    position: absolute;
+    left: -45px;
+    width: 30px;
+  }
+
+  .yoo-media-title {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+  }
+
+  .yoo-media-subtitle {
+    color: $base-color3;
+  }
+
+  .yoo-media-tag {
+    position: absolute;
+    right: 0;
+    top: 8px;
+    font-size: 13px;
+    background-color: rgba($base-color, 0.04);
+    border-radius: 12px;
+    line-height: 1.6em;
+    padding: 2px 8px;
+    color: $blue-color;
+  }
+
+  .yoo-groth-percentage {
+    position: absolute;
+    top: 4px;
+    right: 0;
+  }
+
+  .badge {
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
+
+  .yoo-media-text {
+    margin-top: 1px;
+    line-height: 22px;
+  }
+
+  &.yoo-type1 {
+    min-height: 48px;
+
+    .yoo-media-img {
+      position: absolute;
+      left: -63px;
+      width: 48px;
+    }
+  }
+}
+
+.yoo-medias.yoo-style2 {
+  .yoo-media-title {
+    margin-top: 2px;
+    margin-bottom: -2px;
+    line-height: 16px;
+  }
+}
+
+@media screen and (max-width: 1500px) {
+.yoo-medias.yoo-style1 .yoo-media-text {
+    max-height: 44px;
+    overflow: hidden;
+}
+}

@@ -1,0 +1,98 @@
+.yoo-chart-wrap.yoo-style1 {
+  margin-left: -7px;
+  margin-right: -4px;
+
+  .yoo-chart-in {
+    height: 202px;
+    width: 100%;
+  }
+
+  canvas {
+    height: 100% !important;
+  }
+}
+
+.yoo-porductivity-chart {
+  height: 120px;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  align-items: center;
+}
+
+.apexcharts-legend.position-bottom.apexcharts-align-left {
+  justify-content: center !important;
+}
+
+#yooChart1-4 {
+  min-height: initial !important;
+}
+
+
+.apexcharts-tooltip.apexcharts-theme-light {
+  border-color: $base-color4 !important;
+  border-radius: 10px;
+}
+
+.apexcharts-tooltip.apexcharts-theme-light .apexcharts-tooltip-title {
+  background-color: #fff !important;
+  border-color: $base-color4;
+  font-size: 14px !important;
+  padding: 5px 10px;
+}
+
+.apexcharts-legend.position-bottom.apexcharts-align-left {
+  justify-content: center;
+  bottom: 0px !important;
+}
+
+.apexcharts-legend-marker {
+  border-radius: 3px !important;
+  // top: 2px !important;
+  margin-right: 4px !important;
+}
+
+#yooChart4 {
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: 0px;
+}
+
+.apexcharts-canvas {
+  .apexcharts-xaxistooltip {
+    padding: 9px 10px;
+    border-radius: 5px;
+    background: #fff;
+    border-color: $base-color4;
+  }
+
+  .apexcharts-xaxistooltip-bottom:after {
+    border-bottom-color: #fff;
+  }
+
+  .apexcharts-xaxistooltip-bottom:before {
+    border-bottom-color: $base-color4;
+  }
+
+  .apexcharts-tooltip-marker {
+    margin-right: 7px;
+  }
+
+  .apexcharts-tooltip-series-group.apexcharts-active,
+  .apexcharts-tooltip-series-group:last-child {
+    padding-bottom: 0px;
+  }
+
+  .apexcharts-tooltip {
+    box-shadow: none;
+    padding-bottom: 5px;
+  }
+}
+
+.yoo-performance-chart {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -16px;
+  margin-bottom: -20px;
+}
+

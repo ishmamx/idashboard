@@ -1,0 +1,76 @@
+.yoo-search.yoo-style1 {
+  position: relative;
+
+  .yoo-search-input {
+    width: 100%;
+    border: 1px solid $base-color4;
+    font-size: 14px;
+    padding: 3px 15px;
+    border-radius: 4px;
+    transition: all 0.4s ease;
+    color: $base-color2;
+    padding-left: 32px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .yoo-form-reset {
+    position: absolute;
+    height: 100%;
+    width: 32px;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    border: 1px solid transparent;
+    padding-bottom: 1px;
+    color: $base-color3;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $base-color2;
+    }
+
+    .yoo-reset-input {
+      position: absolute;
+      opacity: 0;
+      z-index: 1;
+      height: 30px;
+      width: 32px;
+      right: 0;
+      top: 0;
+    }
+  }
+
+  .yoo-search-submit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 34px;
+    height: 100%;
+    color: $base-color3;
+    font-size: 20px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $base-color2;
+    }
+  }
+}
+
+.yoo-search.yoo-search-md {
+  .yoo-search-input {
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}

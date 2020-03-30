@@ -1,0 +1,128 @@
+.progress {
+  height: 17px;
+  border-radius: 4px;
+  background-color: $base-color4;
+  overflow: hidden;
+}
+
+.with-lables.progress .progress-bar {
+  border-radius: initial;
+}
+
+.progress-bar {
+  background-color: $blue-color;
+  position: relative;
+  border-radius: 4px;
+}
+
+
+.progress span {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+}
+
+.yoo-progress-wrap.yoo-style3 {
+  .yoo-progress-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3px;
+  }
+
+  .yoo-progressbar-title {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 22px;
+  }
+
+  .yoo-progressbar-percentage {
+    font-size: 13px;
+    color: $base-color3;
+    line-height: 22px;
+  }
+
+  .progress {
+    height: 4px;
+  }
+
+  .progress-bar {
+    opacity: 0.7;
+  }
+
+  &.yoo-type1 {
+    display: flex;
+    align-items: center;
+
+    .yoo-progress-head {
+      margin: 0;
+      width: 35px;
+      flex: none;
+    }
+
+    .yoo-progressbar-percentage {
+      color: $base-color2;
+    }
+
+    .progress {
+      flex: 1;
+    }
+  }
+}
+
+.yoo-progressbar-wrap.yoo-style1 {
+  display: flex;
+  align-items: center;
+  width: calc(100% - 20px);
+
+  .yoo-progressbar {
+    flex: none;
+    width: 50%;
+    height: 5px;
+    background-color: $base-color4;
+    border-radius: 3px;
+  }
+
+  .yoo-progressbar-number {
+    font-size: 13px;
+    line-height: 1.2em;
+    color: $base-color3;
+    margin-left: 6px;
+    line-height: 15px;
+  }
+
+  .progress-bar {
+    opacity: 0.7;
+  }
+}
+
+.yoo-progressbar-wrap.yoo-style2 {
+  .yoo-progressbar-title {
+    font-size: 12px;
+    color: $base-color3;
+    line-height: 1.6em;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+  }
+
+  .yoo-progressbar-number {
+    font-size: 16px;
+    color: $base-color1;
+    line-height: 1.2em;
+    margin-bottom: 10px;
+  }
+
+  .yoo-progressbar-out {
+    height: 4px;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: $base-color4;
+
+    .yoo-progressbar {
+      height: 100%;
+      background-color: $gray-color;
+      opacity: 0.7;
+    }
+  }
+
+
+}

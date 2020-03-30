@@ -1,0 +1,137 @@
+/*========== Start Basic Typography  ==========*/
+html {
+  background-color: $main-color;
+}
+
+body {
+  color: $base-color2;
+  font-family: $body-font;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.6em;
+  background-color: #f2f2f6;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+// div {
+//   line-height: 1.6em;
+// }
+
+body,
+div,
+p,
+span,
+a {
+  letter-spacing: -0.011em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h3,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h3,
+.h5,
+.h6 {
+  clear: both;
+  color: $base-color1;
+  padding: 0;
+  margin: 0 0 10px 0;
+  line-height: 1.2em;
+  font-weight: 600;
+  letter-spacing: -0.011em;
+}
+
+h1,
+.h1 {
+  font-size: 40px;
+}
+
+h2,
+.h2 {
+  font-size: 32px;
+}
+
+h3,
+.h3 {
+  font-size: 28px;
+}
+
+h4,
+.h4 {
+  font-size: 24px;
+}
+
+h5,
+.h5 {
+  font-size: 20px;
+  letter-spacing: 0;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+}
+
+p {
+  margin-bottom: 12px;
+}
+
+ul {
+  margin: 0 0 15px 0;
+  padding-left: 15px;
+  list-style: square outside none;
+}
+
+ol {
+  padding-left: 15px;
+  margin-bottom: 15px;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0;
+}
+
+address {
+  margin: 0 0 15px;
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: inherit;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+a:active {
+  outline: none;
+  color: $base-color1;
+  text-decoration: none;
+}
+
+hr {
+  border-color: $base-color4;
+  margin: 0;
+}
+
+/*========== End Basic Typography  ==========*/

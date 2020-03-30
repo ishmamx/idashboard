@@ -1,0 +1,89 @@
+/*========== Start Attachment List ==========*/
+.yoo-attachment-list {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 15px;
+
+  &.yoo-style1 {
+    display: block;
+  }
+
+  li {
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.yoo-attachment {
+  box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  background: $base-color5;
+  border-radius: 5px;
+  border: 1px solid $base-color4;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+  width: 100%;
+  max-width: 260px;
+
+  .yoo-attachment-img {
+    flex: none;
+    height: 34px;
+    width: 34px;
+    margin-right: 8px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .yoo-attachment-file {
+    font-size: 40px;
+    margin-right: 8px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+    color: $base-color3;
+    display: flex;
+  }
+
+  .yoo-attachment-info {
+    flex: 1;
+  }
+
+  .yoo-attachment-title {
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 1px;
+  }
+
+  .yoo-attachment-size {
+    font-size: 12px;
+    color: $base-color3;
+    line-height: 1.2em;
+  }
+
+  .yoo-attachment-toggle {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+
+    .yoo-attachment-toggle-btn {
+      display: flex;
+      font-size: 22px;
+      cursor: pointer;
+      color: $base-color3;
+      cursor: pointer;
+      transition: all 0.3s ease;
+
+      &:hover {
+        color: $base-color2;
+      }
+    }
+  }
+}
+
+/*========== End Attachment List ==========*/

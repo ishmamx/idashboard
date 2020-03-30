@@ -1,0 +1,19 @@
+.popover {
+  font-family: 'Inter', sans-serif;
+}
+.popover-header {
+  background-color: $base-color5;
+  color: $base-color1;
+  border-color: $base-color4;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+
+.popover {
+  border-color: $base-color4;
+}
+
+.popover-body {
+  padding: 10px 15px;
+  color: $base-color2;
+}

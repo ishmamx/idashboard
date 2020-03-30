@@ -1,0 +1,369 @@
+.yoo-table {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.table thead th {
+  border-bottom-width: 1px;
+  border-color: $base-color4;
+  color: $base-color1;
+  font-weight: 600;
+}
+
+.table td,
+.table th {
+  border-color: $base-color4;
+  vertical-align: middle;
+}
+
+.table .thead-light th {
+  color: $base-color1;
+  background-color: $base-color5;
+  border-color: $base-color4;
+}
+
+.table .thead-dark th {
+  background-color: $base-color1;
+}
+
+.table-hover tbody tr:hover {
+  color: $base-color1;
+  background-color: $base-color5;
+}
+
+.table-primary,
+.table-primary>td,
+.table-primary>th {
+  background-color: $blue-color;
+  color: #fff;
+  border-color: $blue-color;
+}
+
+.table-secondary,
+.table-secondary>td,
+.table-secondary>th {
+  background-color: $gray-color;
+  color: #fff;
+  border-color: $gray-color;
+}
+
+.table-success,
+.table-success>td,
+.table-success>th {
+  background-color: $green-color;
+  color: #fff;
+  border-color: $green-color;
+}
+
+.table-danger,
+.table-danger>td,
+.table-danger>th {
+  background-color: $red-color;
+  color: #fff;
+  border-color: $red-color;
+}
+
+.table-warning,
+.table-warning>td,
+.table-warning>th {
+  background-color: $orange-color;
+  color: #fff;
+  border-color: $orange-color;
+}
+
+.table-info,
+.table-info>td,
+.table-info>th {
+  background-color: $light-blue-color;
+  color: #fff;
+  border-color: $light-blue-color;
+}
+
+.table-light,
+.table-light>td,
+.table-light>th {
+  background-color: $base-color5;
+}
+
+.table-dark,
+.table-dark>td,
+.table-dark>th {
+  background-color: $base-color1;
+  border-color: $base-color1;
+  color: #fff;
+}
+
+.yoo-table-heading.yoo-style1 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+  .btn {
+    border-radius: 4px;
+
+    .yoo-add {
+      font-size: 16px;
+      display: inline-flex;
+    }
+  }
+
+  .btn-outline-light {
+    border-width: 1px;
+    background-color: $base-color5;
+  }
+
+  .show>.btn-outline-light.dropdown-toggle {
+    border-color: $base-color4;
+  }
+
+  .page-item .page-link {
+    color: $base-color2;
+  }
+
+  .page-item.active .page-link {
+    background-color: transparent;
+    border-color: $base-color4;
+    color: $base-color3;
+  }
+}
+
+.yoo-table-heading-btn-list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+
+  >li:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.yoo-table.yoo-style1 {
+  font-size: 14px;
+
+  .yoo-task-checkmark {
+    width: 20px;
+  }
+
+  .table {
+    margin-bottom: 0;
+    border: none;
+
+    tr:last-child {
+      td {
+        border-bottom: none;
+      }
+    }
+
+    td,
+    th {
+      &:first-child {
+        border-left: none;
+        width: 45px;
+      }
+
+      &:last-child {
+        border-right: none;
+        width: 60px;
+        text-align: center;
+      }
+    }
+
+    th {
+      background-color: $base-color5;
+      color: $base-color2;
+    }
+  }
+
+  .table td,
+  .table th {
+    padding: 10px 20px;
+  }
+
+  &.yoo-type1 {
+    .table th {
+      border-top: none;
+      background-color: transparent;
+
+      &:first-child {
+        border-top-left-radius: 10px;
+      }
+
+      &:last-child {
+        border-top-right-radius: 10px;
+      }
+    }
+
+    .table td:last-child {
+      text-align: left;
+    }
+  }
+
+  &.yoo-type2 {
+    .yoo-switch {
+      margin: auto;
+    }
+
+    tr {
+
+      td,
+      th {
+
+        &:last-child {
+          width: 1px;
+        }
+      }
+    }
+  }
+}
+
+.yoo-table-action-btn.yoo-style1 {
+  border: none;
+  height: 26px;
+  width: 26px;
+  padding: 0;
+  border-radius: 50%;
+  font-size: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: $base-color2;
+  background-color: $base-color5;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.yoo-table-info-btn.yoo-style1 {
+  padding: 0;
+  margin: 0;
+  margin-left: 2px;
+  display: inline-flex;
+  border: none;
+  font-size: 18px;
+  color: $base-color3;
+  position: relative;
+  top: 4px;
+  transition: all 0.3s ease;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $base-color2;
+  }
+}
+
+.yoo-table-medias.yoo-style1 {
+  display: flex;
+  align-items: center;
+
+  .yoo-media-img {
+    flex: none;
+    margin-right: 10px;
+  }
+
+  .yoo-media-title {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  a {
+    color: $blue-color;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.yoo-table-chart {
+  width: 120px;
+  margin-top: -30px;
+  margin-bottom: -30px;
+  margin-left: -20px;
+  margin-right: -10px;
+}
+
+.dropdown-menu.yoo-table-info-text {
+  width: 300px;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.72);
+  font-weight: 400;
+  padding: 15px 20px;
+}
+
+.yoo-arrow-wrap {
+  position: relative;
+}
+
+.yoo-arrow-but-group {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  .yoo-arrow-btn {
+    padding: 0;
+    margin: -2px 0;
+    display: inline-flex;
+    border: none;
+    font-size: 12px;
+    background: transparent;
+    color: $base-color3;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $base-color2;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.yoo-filter-btn {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  background: transparent;
+  color: $base-color3;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $base-color2;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.yoo-arrow-wrap {
+  position: relative;
+
+  .yoo-filter-btn {
+    opacity: 0;
+  }
+
+  &:hover {
+    .yoo-filter-btn {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 1500px) {
+  .yoo-table.yoo-style1 .table td,
+  .yoo-table.yoo-style1 .table th {
+    padding: 10px 15px;
+  }
+}

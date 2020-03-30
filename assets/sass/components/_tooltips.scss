@@ -1,0 +1,38 @@
+.tooltip {
+  line-height: 1.6em;
+  font-size: 12;
+  font-family: inherit;
+}
+
+.tooltip.show {
+  opacity: 1;
+}
+
+.tooltip-inner {
+  max-width: 200px;
+  padding: 5px 15px;
+  color: #fff;
+  text-align: center;
+  background-color: $gray-color;
+  border-radius: 4px;
+}
+
+.bs-tooltip-auto[x-placement^=top] .arrow::before,
+.bs-tooltip-top .arrow::before {
+  border-top-color: $gray-color;
+}
+
+.bs-tooltip-auto[x-placement^=right] .arrow::before,
+.bs-tooltip-right .arrow::before {
+  border-right-color: $gray-color;
+}
+
+.bs-tooltip-auto[x-placement^=bottom] .arrow::before,
+.bs-tooltip-bottom .arrow::before {
+  border-bottom-color: $gray-color;
+}
+
+.bs-tooltip-auto[x-placement^=left] .arrow::before,
+.bs-tooltip-left .arrow::before {
+  border-left-color: $gray-color;
+}

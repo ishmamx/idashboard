@@ -1,0 +1,137 @@
+.alert {
+  font-size: 14px;
+  font-weight: 400;
+  padding: 14px 15px;
+  line-height: 1.45em;
+  border: none;
+  position: relative;
+  border: 1px solid;
+  border-radius: 7px;
+}
+
+.alert-link {
+  font-size: inherit;
+  text-transform: uppercase;
+  font-weight: 600;
+  position: absolute;
+  right: 15px;
+}
+
+.alert-primary {
+  background-color: rgba($blue-color, 0.1);
+  color: $blue-color;
+  border-color: rgba($blue-color, 0.3);
+}
+
+.alert-secondary {
+  background-color: rgba($gray-color, 0.1);
+  color: $gray-color;
+  border-color: rgba($gray-color, 0.3);
+}
+
+.alert-success {
+  background-color: rgba($green-color, 0.1);
+  color: $green-color;
+  border-color: rgba($green-color, 0.3);
+
+  hr {
+    border-color: rgba($green-color, 0.1);
+  }
+}
+
+.alert-danger {
+  background-color: rgba($red-color, 0.1);
+  color: $red-color;
+  border-color: rgba($red-color, 0.3);
+}
+
+.alert-warning {
+  background-color: rgba($orange-color, 0.1);
+  color: $orange-color;
+  border-color: rgba($orange-color, 0.3);
+}
+
+.alert-info {
+  background-color: rgba($light-blue-color, 0.1);
+  color: $light-blue-color;
+  border-color: rgba($light-blue-color, 0.3);
+}
+
+.alert-light {
+  background-color: $base-color5;
+  color: $base-color2;
+  border-color: rgba($base-color5, 0.3);
+}
+
+.alert-dark {
+  background-color: $base-color1;
+  color: #fff;
+}
+
+.alert-primary .alert-link {
+  color: $blue-color;
+
+  &:hover {
+    color: rgba($blue-color, 0.8);
+  }
+}
+
+.alert-secondary .alert-link {
+  color: $gray-color;
+
+  &:hover {
+    color: rgba($gray-color, 0.8);
+  }
+}
+
+.alert-success .alert-link {
+  color: $green-color;
+
+  &:hover {
+    color: rgba($green-color, 0.8);
+  }
+}
+
+.alert-danger .alert-link {
+  color: $red-color;
+
+  &:hover {
+    color: rgba($red-color, 0.8);
+  }
+}
+
+.alert-warning .alert-link {
+  color: $orange-color;
+
+  &:hover {
+    color: rgba($orange-color, 0.8);
+  }
+}
+
+.alert-info .alert-link {
+  color: $light-blue-color;
+
+  &:hover {
+    color: rgba($light-blue-color, 0.8);
+  }
+}
+
+.alert-light .alert-link {
+  color: $base-color1;
+
+  &:hover {
+    color: $base-color2;
+  }
+}
+
+.alert-dark .alert-link {
+  color: $blue-color;
+
+  &:hover {
+    color: rgba($blue-color, 0.8);
+  }
+}
+
+.alert hr {
+  margin: 15px 0;
+}

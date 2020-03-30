@@ -1,0 +1,38 @@
+.toast {
+  box-shadow: none;
+  border: 1px solid $base-color4;
+}
+
+.toast .close {
+  font-size: 20px;
+  line-height: 1em;
+  display: flex;
+  color: $base-color2;
+  position: relative;
+  top: 3px;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: $base-color1
+  }
+}
+
+.toast strong {
+  font-weight: 600;
+  color: $base-color1;
+}
+
+.toast-header {
+  padding: 10px 15px;
+  border-color: $base-color4;
+}
+
+.toast-body {
+  padding: 10px 15px;
+}
+
+.toast-header small {
+  color: $base-color3;
+  font-size: 12px;
+    line-height: 1.6em;
+}

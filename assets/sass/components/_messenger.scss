@@ -1,0 +1,627 @@
+/*========== Start Chartting  ==========*/
+.yoo-chat-heading {
+  height: 81px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+  border-bottom: 1px solid $base-color4;
+}
+
+.yoo-user-meta {
+  color: $base-color3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+
+  li:not(:last-child) {
+    margin-right: 10px;
+    padding-right: 10px;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+      height: 15px;
+      width: 1px;
+      background: $base-color4;
+      right: 0;
+      top: 50%;
+      margin-top: -7px;
+    }
+  }
+
+  a:hover {
+    color: $base-color2;
+  }
+
+  .yoo-get-star {
+    font-size: 18px;
+    height: 18px;
+    width: 18px;
+  }
+}
+
+.yoo-chatbox-wrap {
+  height: calc(100vh - 141px);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  .yoo-chat-box {
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-bottom: 15px;
+  }
+
+  .yoo-user.yoo-style2 {
+    align-items: flex-start;
+    padding-bottom: 10px;
+
+    .yoo-user-name {
+      margin-bottom: 8px;
+    }
+
+    .yoo-user-time {
+      font-size: 12px;
+      color: $base-color3;
+      margin-left: 8px;
+      font-weight: 400;
+    }
+  }
+
+  .yoo-user-chat-text {
+    font-size: 14px;
+  }
+
+  .yoo-user-chat-text p {
+    margin-bottom: 6px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.yoo-chat-controller {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  border: 2px solid $base-color4;
+  border-radius: 5px;
+
+  .yoo-chat-input {
+    border: none;
+    flex: 1;
+    width: 100%;
+    width: 100%;
+    padding: 15px 20px;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::-webkit-input-placeholder {
+      color: $base-color3;
+    }
+
+    &::-moz-placeholder {
+      color: $base-color3;
+    }
+
+    &:-ms-input-placeholder {
+      color: $base-color3;
+    }
+
+    &:-moz-placeholder {
+      color: $base-color3;
+    }
+  }
+
+  .yoo-chat-option {
+    font-size: 24px;
+    height: 100%;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    color: $base-color3;
+  }
+
+  .yoo-custom-input-area .yoo-custom-input-field {
+    padding: 14px 15px;
+    font-size: 14px;
+    border-left: 2px solid $base-color4;
+    &:focus {
+      min-height: 50px;
+    }
+  }
+
+  .yoo-icon-group.yoo-style1 {
+    padding: 13px 20px 13px 0;
+  }
+
+  .yoo-custom-input-area {
+    overflow: auto;
+    max-height: 300px;
+  }
+}
+
+.yoo-chat-date {
+  text-align: center;
+  font-size: 12px;
+  font-weight: 500;
+  color: $base-color3;
+  display: flex;
+  justify-content: center;
+  line-height: 1.2em;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 25px;
+
+  span {
+    position: relative;
+    padding: 0 12px;
+
+    &:before,
+    &:after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      height: 1px;
+      width: 2000px;
+      background-color: $base-color4;
+    }
+
+    &:before {
+      left: 100%;
+    }
+
+    &:after {
+      right: 100%;
+    }
+  }
+}
+
+// Messenger Style
+.yoo-messenger-sidebar {
+  .yoo-search-wrap {
+    padding: 0 20px 20px;
+  }
+
+  .yoo-user-list .yoo-user-img img {
+    height: 48px;
+    width: 48px;
+  }
+
+  .yoo-user-list .yoo-user-name {
+    font-size: 16px;
+    line-height: 1.2em;
+    font-weight: 400;
+  }
+
+  .yoo-user-text {
+    font-size: 14px;
+    line-height: 1.6em;
+  }
+
+  a.yoo-user.yoo-style1 {
+    position: relative;
+  }
+
+  .yoo-user-list .yoo-user-time {
+    position: absolute;
+    right: 30px;
+    top: 12px;
+    font-size: 13px;
+  }
+
+  .yoo-email-friend-list-wrap {
+    .yoo-user-list .yoo-user-time {
+      position: initial;
+    }
+  }
+
+  .yoo-nav-label {
+    font-size: 10px;
+    background-color: $red-color;
+    margin-left: 4px;
+    position: relative;
+    top: -1px;
+  }
+
+  .yoo-online-status.yoo-live {
+    font-size: 14px;
+  }
+}
+
+.yoo-messenger-body {
+  .yoo-user.yoo-style2 .yoo-user-time {
+    font-size: 14px;
+  }
+
+  .yoo-chat-date {
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  .yoo-user.yoo-style2 .yoo-user-chat-text-group {
+    width: 60%;
+  }
+
+  .yoo-user.yoo-style2 .yoo-user-chat-text-in {
+    display: inline-block;
+    font-size: 14px;
+    line-height: 1.6em;
+    border-radius: 10px;
+    padding: 9px 15px;
+    background-color: $base-color4;
+    color: $base-color1;
+    position: relative;
+  }
+
+  .yoo-chatbox-wrap .yoo-user-chat-text:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .yoo-user-chat-text-seting {
+    position: absolute;
+    left: 100%;
+    top: 9px;
+    margin-left: 13px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .yoo-user-chat-text-in:hover .yoo-user-chat-text-seting {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  .yoo-user.yoo-style2.yoo-right-side .yoo-user-chat-text-group {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .yoo-user.yoo-style2.yoo-right-side .yoo-user-chat-text-in {
+    text-align: left;
+    color: rgba(255, 255, 255, 0.9);
+    background-color: $blue-color;
+  }
+
+  .yoo-right-side .yoo-user-chat-text-seting {
+    left: initial;
+    right: 100%;
+    margin-left: 0;
+    margin-right: 13px;
+  }
+}
+
+.yoo-right-side .yoo-icon-group.yoo-style1 {
+  flex-direction: row-reverse;
+
+  li {
+    margin-left: 15px;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .yoo-chat-heading {
+    padding-left: 90px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .yoo-chat-heading .yoo-user-meta {
+    display: none;
+  }
+
+  .yoo-messenger-body .yoo-user.yoo-style2 .yoo-user-chat-text-group {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .yoo-messenger-body .yoo-user.yoo-style2 .yoo-user-time {
+    font-size: 13px;
+    line-height: 1.2em;
+  }
+
+  .yoo-chat-heading .yoo-user.yoo-style2 .yoo-user-name {
+    font-size: 13px;
+  }
+
+  .yoo-chat-heading .yoo-icon-group.yoo-style1 li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .yoo-chat-heading .yoo-icon-group.yoo-style1 li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .yoo-chat-heading .yoo-icon-group.yoo-style1 li a {
+    font-size: 21px;
+  }
+
+  .yoo-chat-controller .yoo-icon-group.yoo-style1 li:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .yoo-user.yoo-style4 .btn {
+    min-width: initial;
+  }
+
+  .yoo-chatbox-wrap {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .yoo-chat-heading .yoo-icon-group.yoo-style1 li a,
+  .yoo-chat-controller .yoo-icon-group.yoo-style1 li a {
+    font-size: 19px;
+  }
+}
+
+/////////////////////////////////////////////////
+.conversation-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.conversation-list li {
+  margin-bottom: 24px;
+}
+
+.conversation-list .chat-avatar {
+  width: 40px;
+  display: inline-block;
+  text-align: center;
+  float: left;
+}
+
+.conversation-list .chat-avatar i {
+  font-size: 12px;
+  font-style: normal;
+}
+
+.conversation-list .ctext-wrap i {
+  display: block;
+  font-style: normal;
+  font-weight: bold;
+  position: relative;
+  font-size: 12px;
+  color: #2cb9b3;
+}
+
+.conversation-list .conversation-text {
+  display: inline-block;
+  font-size: 12px;
+  float: left;
+  margin-left: 12px;
+  width: 70%;
+}
+
+.conversation-list .ctext-wrap {
+  padding: 10px;
+  background: #d5f2ef;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  display: inline-block;
+}
+
+.conversation-list .ctext-wrap p {
+  margin: 0px;
+  padding-top: 3px;
+}
+
+.conversation-list .ctext-wrap:after {
+  right: 100%;
+  top: 20%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(213, 242, 239, 0);
+  border-right-color: #d5f2ef;
+  border-width: 5px;
+  margin-top: -5px;
+}
+
+.conversation-list .odd .chat-avatar {
+  float: right !important;
+}
+
+.conversation-list .odd .conversation-text {
+  width: 70% !important;
+  margin-right: 12px;
+  text-align: right;
+  float: right !important;
+}
+
+.conversation-list .odd .ctext-wrap {
+  background: #eeeef2 !important;
+}
+
+.conversation-list .odd .ctext-wrap i {
+  color: #acacac;
+}
+
+.conversation-list .odd .ctext-wrap:after {
+  left: 100% !important;
+  top: 20% !important;
+  border-color: rgba(238, 238, 242, 0) !important;
+  border-left-color: #eeeef2 !important;
+}
+
+.chat-send {
+  padding-left: 0px;
+}
+
+.chat-send button {
+  width: 100%;
+}
+
+.yoo-chat-info-card {
+  position: absolute;
+  top: 81px;
+  right: -460px;
+  width: 450px;
+  background-color: $main-color;
+  border-left: 1px solid $base-color4;
+  height: calc(100vh - 141px);
+  transition: all 0.4s ease;
+  overflow: auto;
+}
+
+.yoo-chat-container {
+  transition: all 0.4s ease;
+}
+
+.yoo-chat-container.yoo-active .yoo-chat-info-card {
+  right: 0;
+}
+
+.yoo-chat-container.yoo-active {
+  padding-right: 450px;
+}
+
+.yoo-chat-info-cross {
+  position: absolute;
+  font-size: 21px;
+  right: 15px;
+  top: 15px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+
+  &:hover {
+    color: $base-color1;
+  }
+}
+
+.yoo-messenger-sidebar {
+  width: 300px;
+  background-color: #fff;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: fixed;
+  left: 300px;
+  top: 60px;
+  border-right: 1px solid $base-color4;
+  z-index: 50;
+  transition: all 0.3s ease;
+
+  .yoo-messenger-sidebar-in {
+    height: 100%;
+  }
+
+  .yoo-sidebar-nav {
+    width: 100%;
+  }
+}
+
+.yoo-chart-container {
+  position: relative;
+  margin-left: 300px;
+}
+
+.yoo-people-toggle-btn {
+  font-size: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-right: 2px solid $base-color4;
+  width: 62px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $base-color3;
+  display: none;
+  z-index: 101;
+
+  i,
+  .hydrated {
+    transition: all 0.3s ease;
+  }
+
+  &.active i,
+  &.active .hydrated {
+    transform: rotate(180deg);
+  }
+
+}
+
+@media screen and (max-width: 1500px) {
+
+  .yoo-messenger-sidebar {
+    left: 300px;
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  .yoo-chat-container.yoo-active {
+    padding-right: 0;
+  }
+
+  .yoo-chat-container .yoo-chat-info-card {
+    right: 0;
+    display: block;
+    width: 100%;
+    z-index: 100;
+  }
+
+  .yoo-chat-container.yoo-active .yoo-chat-info-card {
+    right: -460px;
+    display: none;
+  }
+
+}
+
+@media screen and (max-width: 1199px) {
+  .yoo-chart-container {
+    margin-left: 0px;
+  }
+
+  .yoo-people-toggle-btn {
+    display: flex;
+  }
+
+  .yoo-messenger-sidebar {
+    width: 300px;
+    left: -300px;
+
+    &.active {
+      left: 0;
+    }
+
+    .yoo-email-user-wrap {
+      padding-left: 75px;
+    }
+  }
+
+  .yoo-email-user-wrap {
+    height: 81px;
+    width: 100%;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left: 75px;
+  }
+}
+
+/*========== End Chartting  ==========*/

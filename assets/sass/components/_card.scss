@@ -1,0 +1,222 @@
+.yoo-card.yoo-style1 {
+  border-radius: 10px;
+  background-color: $main-color;
+  border: 1px solid $base-color4;
+
+  &.yoo-height-auto {
+    height: auto;
+  }
+
+  .yoo-card-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 5px 20px;
+    border-bottom: 1px solid $base-color4;
+    min-height: 45px;
+  }
+
+  .yoo-card-title {
+    font-size: 12px;
+    font-weight: 500;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    color: $base-color2;
+    display: flex;
+    align-items: center;
+  }
+
+  .yoo-card-btn {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    padding: 0px 5px;
+    margin-right: -8px;
+    color: $base-color2;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $base-color1;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .yoo-card-heading {
+    .nav-tabs .nav-link {
+      padding: 3px 35px;
+    }
+  }
+}
+
+.card {
+  border: none;
+  border-radius: 4px;
+  border: 1px solid $base-color4;
+}
+
+.card-body {
+  padding: 25px 20px;
+}
+
+.card-text {
+  font-size: 14px;
+  line-height: 1.6em;
+  margin-bottom: 14px;
+}
+
+.card-title {
+  margin-top: -3px;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.card-subtitle {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87) !important;
+  margin-top: 0;
+  margin-bottom: 12px !important;
+}
+
+.card-link+.card-link {
+  margin-left: 0;
+}
+
+.card-link {
+  font-size: 15px;
+  font-weight: 400;
+  color: $blue-color;
+  padding: 7px 8px;
+  border: none;
+  margin-left: -8px;
+  border-radius: 4px;
+
+  &:hover {
+    color: $blue-color;
+    background-color: rgba($blue-color, 0.1);
+  }
+}
+
+.card-header {
+  padding: 15px 20px;
+  font-weight: 500;
+  background-color: $base-color5;
+  border-color: $base-color4;
+  font-size: 16px;
+  line-height: 1.2em;
+  color: $base-color1;
+}
+
+.card-footer {
+  background-color: transparent;
+  border-color: $base-color4;
+  background-color: $base-color5;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+.card-img-overlay {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  .card-title {
+    color: #fff;
+  }
+
+  .card-text {
+    color: rgba(255, 255, 255, 0.7);
+  }
+}
+
+.text-white {
+
+  .card-header,
+  .card-title {
+    color: #fff !important;
+  }
+}
+
+.text-muted {
+  color: $base-color3 !important;
+  font-size: 14px;
+}
+
+.card-header-tabs {
+  margin-right: -20px;
+  margin-bottom: -16px;
+  margin-left: -20px;
+  margin-top: -15px;
+  border-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  background: $main-color;
+  border-radius: 4px 4px 0 0;
+  border-bottom: 1px solid $base-color4;
+}
+
+.border-card {
+  border: 1px solid;
+  box-shadow: none;
+}
+
+.card-header {
+
+  &.bg-primary,
+  &.bg-secondary,
+  &.bg-success,
+  &.bg-danger,
+  &.bg-warning,
+  &.bg-warning,
+  &.bg-info,
+  &.bg-dark {
+    border: none;
+  }
+}
+
+.yoo-card-title-icon {
+  display: inline-flex;
+  height: 22px;
+  width: 22px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background: $blue-color;
+  color: #fff;
+  margin-right: 6px;
+  font-size: 14px;
+}
+
+.yoo-card-meta.yoo-style1 {
+  .yoo-card-meta-title {
+    line-height: 22px;
+  }
+
+  .yoo-card-meta-number {
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+
+    span {
+      font-size: 18px;
+      margin-left: 6px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .yoo-card.yoo-style1 .yoo-card-heading .nav-tabs .nav-link {
+    padding: 3px 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .yoo-card.yoo-style1 .yoo-card-heading .nav-tabs .nav-link {
+    padding: 3px 10px;
+  }
+}

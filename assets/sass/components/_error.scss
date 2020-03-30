@@ -1,0 +1,87 @@
+/*========== Start Error Page  ==========*/
+.yoo-error-wrap.yoo-style1 {
+  padding: 60px 0;
+}
+
+.yoo-error-wrap.yoo-style1,
+.yoo-error-wrap.yoo-style2 {
+  min-height: 100vh;
+  align-items: center;
+  display: flex;
+
+  .container {
+    max-width: 1330px;
+  }
+}
+
+.yoo-error-text.yoo-style1 {
+  .yoo-error-title {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+
+  .yoo-error-desc {
+    font-size: 16px;
+    line-height: 1.6em;
+    margin-bottom: 25px;
+    max-width: 560px;
+  }
+
+  .yoo-style1.yoo-color3 {
+    color: $blue-color;
+    border-color: $blue-color;
+    background-color: transparent;
+
+    &:hover {
+      color: #fff;
+      background-color: $blue-color;
+      border-color: $blue-color;
+    }
+  }
+
+  &.yoo-color1 {
+    .yoo-error-title {
+      color: $main-color;
+    }
+
+    .yoo-error-desc {
+      color: $main-color;
+      opacity: 0.7;
+    }
+
+    .yoo-style1.yoo-color3 {
+      color: $main-color;
+      border-color: $main-color;
+      background-color: transparent;
+
+      &:hover {
+        color: $gray-color;
+      }
+    }
+  }
+}
+
+.yoo-error-img.yoo-style2 {
+  width: 50vw;
+  height: 100vh;
+  margin-left: -15px;
+}
+
+.yoo-error-wrap.text-center .yoo-error-desc {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 991px) {
+  .yoo-error-img.yoo-style2 {
+    width: 100%;
+    height: 350px;
+    margin-left: -0;
+  }
+
+  .yoo-error-wrap.yoo-style2 {
+    padding: 60px 0;
+  }
+}
+
+/*========== End Error Page  ==========*/

@@ -1,0 +1,332 @@
+table.dataTable tbody th,
+table.dataTable tbody td,
+  {
+  padding: 10px 20px;
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+  padding: 10px 20px;
+  border-bottom-color: $base-color4;
+  border-top: 1px solid $base-color4;
+  border-right: 1px solid $base-color4;
+  background: $base-color5;
+  position: relative;
+}
+
+table.dataTable.display tbody tr.odd>.sorting_1,
+table.dataTable.order-column.stripe tbody tr.odd>.sorting_1,
+table.dataTable.stripe tbody tr.odd,
+table.dataTable.display tbody tr.odd,
+table.dataTable.display tbody tr.even>.sorting_1,
+table.dataTable.order-column.stripe tbody tr.even>.sorting_1 {
+  background-color: transparent;
+}
+
+table.dataTable.stripe tbody tr:hover,
+table.dataTable.display tbody tr.odd:hover,
+table.dataTable.hover tbody tr:hover,
+table.dataTable.display tbody tr:hover {
+  background-color: transparent !important;
+}
+
+table.dataTable.display tbody td {
+  border-right: 1px solid $base-color4;
+}
+
+table.dataTable.row-border tbody th,
+table.dataTable.row-border tbody td,
+table.dataTable.display tbody th,
+table.dataTable.display tbody td {
+  border-color: $base-color4;
+}
+
+table.dataTable thead .sorting_asc,
+table.dataTable thead .sorting_desc,
+table.dataTable thead .sorting {
+  background-image: initial;
+}
+
+table.dataTable thead .sorting_asc .yoo-filter-btn {
+  transform: rotate(180deg);
+}
+
+table.dataTable thead th,
+table.dataTable thead td {
+  .yoo-filter-btn {
+    opacity: 0;
+  }
+
+  &:hover {
+    .yoo-filter-btn {
+      opacity: 1;
+    }
+  }
+}
+
+table.dataTable.no-footer {
+  border-bottom: none;
+}
+
+table.dataTable tbody tr {
+  background: transparent;
+}
+
+.dataTables_wrapper .dataTables_length {
+  display: none;
+}
+
+.dataTables_wrapper .dataTables_filter {
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 15px;
+
+  label {
+    margin-bottom: 0;
+  }
+}
+
+.dataTables_wrapper .dataTables_filter input {
+  border: 1px solid $base-color4;
+  border-radius: 4px;
+  height: 36px;
+  width: 210px;
+  padding: 5px 15px 5px 33px;
+  font-size: 14px;
+  margin-left: 0;
+  background-image: url(../img/search.svg);
+  background-repeat: no-repeat;
+  background-position: 7px center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.dataTables_wrapper .dataTables_info {
+  float: right;
+  clear: initial;
+  padding-top: 8px;
+  margin-right: 10px;
+}
+
+.dataTables_wrapper .dataTables_paginate {
+  padding: 0;
+  display: flex;
+  border: 1px solid $base-color4;
+  border-radius: 4px;
+  margin-right: 10px;
+
+  >span {
+    display: none;
+  }
+
+  >.paginate_button {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 34px;
+    width: 34px;
+    margin: 0;
+    border: none !important;
+    padding: 0;
+    color: $base-color2 !important;
+
+    &.disabled {
+      color: $base-color3 !important;
+
+      &:hover {
+        color: $base-color3 !important;
+      }
+    }
+
+    &.previous {
+      border-right: 1px solid $base-color4 !important;
+    }
+
+    &:hover {
+      background: $base-color5;
+      color: $base-color2 !important;
+    }
+  }
+}
+
+.yooDataTableWrap {
+  position: relative;
+
+  .dataTables_wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+
+  table {
+    min-width: 1100px;
+  }
+
+  .btn {
+    position: absolute;
+    padding: 0.5em 1.4em;
+    z-index: 1;
+
+    .yoo-add {
+      font-size: 22px;
+      display: inline-flex;
+      margin-top: -3px;
+      margin-bottom: -2px;
+      position: relative;
+      top: 2px;
+    }
+
+    &.yoo-table-btn1 {
+      top: 0;
+      right: 20px;
+    }
+
+    &.yoo-table-btn2 {
+      right: 167px;
+      top: 0;
+      padding: 0.465em 1.4em;
+      border-width: 1px;
+      background-color: $base-color5;
+    }
+  }
+}
+
+#yooDataTable {
+
+  th,
+  td {
+    &:first-child {
+      border-left: none;
+      width: 1% !important;
+    }
+
+    &:last-child {
+      border-right: none;
+      width: 1% !important;
+      text-align: center;
+    }
+
+    &:nth-child(2) {
+      width: 1% !important;
+    }
+
+    &:nth-child(3) {
+      width: 16% !important;
+    }
+
+    &:nth-child(5) {
+      width: 15% !important;
+    }
+
+    &:nth-child(6) {
+      width: 16% !important;
+    }
+
+    &:nth-child(7) {
+      width: 12% !important;
+    }
+
+    &:nth-child(8) {
+      width: 1% !important;
+    }
+
+    &:nth-child(9) {
+      width: 5% !important;
+    }
+  }
+}
+
+.dataTables_wrapper .top {
+  padding-right: 309px;
+}
+
+@media screen and (max-width: 1500px) {
+  #yooDataTable {
+
+    th,
+    td {
+
+      &:nth-child(3) {
+        width: 20% !important;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 991px) {
+
+  #yooDataTable_wrapper .dataTable tbody th,
+  #yooDataTable_wrapper .dataTable tbody td,
+  #yooDataTable_wrapper .dataTable thead th,
+  #yooDataTable_wrapper .dataTable thead td {
+    padding: 10px 10px;
+  }
+
+  .yoo-filter-btn {
+    right: 2px;
+    top: 14px;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .yooDataTableWrap .btn {
+    position: initial;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  #yooDataTable_wrapper {
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-top: 50px;
+    position: initial;
+
+    .top {
+      padding-right: 10px;
+      position: absolute;
+      left: 0px;
+      top: 50px;
+      width: 100%;
+    }
+
+    .dataTables_filter {
+      margin-top: 0 !important;
+    }
+
+    .dataTables_paginate {
+      width: 68px;
+      margin-left: auto;
+      margin-top: 0;
+      float: right;
+    }
+
+    .dataTables_wrapper .dataTables_info {
+      float: right !important;
+    }
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  .dataTables_wrapper .dataTables_filter input {
+    width: 130px;
+  }
+
+  .yooDataTableWrap .btn {
+    padding: 0.5em 1em;
+    margin-left: 3px;
+    font-size: 13px;
+
+    &:first-child {
+      margin-left: 20px;
+    }
+
+  }
+
+  .yooDataTableWrap .btn.yoo-table-btn2 {
+    padding: 0.465em 1em;
+  }
+}

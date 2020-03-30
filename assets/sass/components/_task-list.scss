@@ -1,0 +1,84 @@
+/*========== Start Task List  ==========*/
+.yoo-task-list.yoo-style1 {
+
+  .badge {
+    line-height: 10px;
+  }
+
+  &>li {
+    display: flex;
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 15px;
+    }
+
+    &:hover .yoo-button-group {
+      opacity: 1;
+    }
+  }
+
+  .yoo-task-checkmark {
+    margin-right: 15px;
+    height: 50px;
+    display: flex;
+    padding-top: 1px;
+  }
+
+  .yoo-task-icon {
+    margin-right: 12px;
+
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .yoo-task-text {
+    h3 {
+      font-size: 14px;
+      margin-bottom: 4px;
+      line-height: 1.2em;
+      font-weight: 500;
+    }
+  }
+
+  .yoo-button-group {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+
+  .yoo-ativity-time {
+    font-size: 12px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: $base-color3;
+    margin-bottom: -3px;
+
+    i,
+    .hydrated {
+      margin-right: 5px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .yoo-cta.yoo-style2 {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .yoo-padd-lr-30.yoo-card-content-height1 {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+/*========== End Task List  ==========*/

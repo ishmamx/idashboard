@@ -1,0 +1,67 @@
+.dropdown-menu {
+  padding: 10px 0;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.dropdown-item {
+  font-size: 14px;
+  padding: 10px 15px;
+  line-height: 1.6em;
+  color: $base-color1;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: $blue-color;
+  text-decoration: none;
+  background-color: rgba($blue-color, 0.1);
+}
+
+.dropdown-divider {
+  border-color: $base-color4;
+  margin: 10px 0;
+}
+
+.dropdown-toggle:after,
+.dropleft .dropdown-toggle:before {
+  font-size: 18px;
+  position: relative;
+  top: 2px;
+}
+
+.dropdown-toggle:after {
+  margin-left: 6px;
+}
+
+.dropleft .dropdown-toggle:before {
+  margin-right: 6px;
+}
+
+.dropdown-toggle-split.dropdown-toggle:after {
+  margin-left: 0;
+}
+
+.dropleft .dropdown-toggle-split.dropdown-toggle:before {
+  margin-right: 0;
+}
+
+.dropdown-toggle.btn-sm:after,
+.dropleft .dropdown-toggle.btn-sm:before {
+  top: 2px;
+  font-size: 16px;
+}
+
+.dropdown-toggle.btn-lg:after,
+.dropleft .dropdown-toggle.btn-lg:before {
+  top: 2px;
+  font-size: 20px
+}
+
+.btn-lg+.dropdown-menu {
+  width: 220px;
+}
+
+.btn-sm+.dropdown-menu .dropdown-item {
+  padding: 7px 15px;
+}

@@ -1,0 +1,93 @@
+.modal.modal-comp {
+  position: relative;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: auto;
+  z-index: 1;
+  display: block;
+}
+
+.modal-header .close {
+  font-size: 24px;
+  transition: all 0.3s ease;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+.modal-content {
+  border-color: $base-color4;
+}
+
+.modal-btn-primary,
+.modal-btn-secondary,
+.modal-btn-success,
+.modal-btn-danger,
+.modal-btn-warning,
+.modal-btn-info {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 0.54em 1.12em;
+  letter-spacing: 0.89px;
+  border: none;
+  margin-left: -10px;
+  border-radius: 4px;
+
+  &:hover {
+    color: $blue-color;
+    background-color: rgba($blue-color, 0.1);
+  }
+}
+.modal-btn-primary {
+  color: $blue-color;
+  &:hover {
+    color: $blue-color;
+    background-color: rgba($blue-color, 0.1);
+  }
+}
+.modal-btn-secondary {
+  color: $gray-color;
+  &:hover {
+    color: $gray-color;
+    background-color: rgba($gray-color, 0.1);
+  }
+}
+.modal-btn-success {
+  color: $green-color;
+  &:hover {
+    color: $green-color;
+    background-color: rgba($green-color, 0.1);
+  }
+}
+.modal-btn-danger {
+  color: $red-color;
+  &:hover {
+    color: $red-color;
+    background-color: rgba($red-color, 0.1);
+  }
+}
+.modal-btn-warning {
+  color: $orange-color;
+  &:hover {
+    color: $orange-color;
+    background-color: rgba($orange-color, 0.1);
+  }
+}
+.modal-btn-info {
+  color: $light-blue-color;
+  &:hover {
+    color: $light-blue-color;
+    background-color: rgba($light-blue-color, 0.1);
+  }
+}
+.modal-btn-dark {
+  color: $base-color1;
+  &:hover {
+    color: $base-color1;
+    background-color: rgba($base-color1, 0.1);
+  }
+}

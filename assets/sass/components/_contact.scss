@@ -1,0 +1,66 @@
+/*========== Start Contact Page  ==========*/
+.yoo-contact-wrap.yoo-style1 {
+  display: flex;
+
+  .yoo-contact-left {
+    flex: 1;
+    border-right: 1px solid $base-color4;
+  }
+
+  .yoo-contact-right {
+    flex: 1;
+  }
+}
+
+.yoo-toolbtn {
+  height: 41px;
+  width: 46px;
+  display: inline-flex;
+  border: 2px solid $base-color4;
+  border-radius: 4px;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 22px;
+  color: $base-color2;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $base-color5;
+  }
+  &:after {
+    display: none;
+  }
+}
+
+.yoo-contact-info-list {
+  font-size: 14px;
+  line-height: 1.6em;
+
+  li {
+    display: flex;
+    margin-bottom: 2px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .yoo-contact-info-label {
+    color: $base-color3;
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .yoo-contact-wrap.yoo-style1 {
+    display: flex;
+    display: block;
+  }
+
+  .yoo-contact-wrap.yoo-style1 .yoo-contact-left {
+    border-right: none;
+    border-bottom: 1px solid $base-color4;
+  }
+}
+
+/*========== End Contact Page  ==========*/
