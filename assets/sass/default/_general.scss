@@ -2737,7 +2737,7 @@ kbd {
   }
 }
 
-.tb-icon-wrap {
+.yoo-icon-wrap {
   iframe {
     border: none;
     width: 100%;
@@ -2747,36 +2747,74 @@ kbd {
   }
 }
 
+// Start Add
 .yoo-add {
+  padding: 20px;
   position: absolute;
-  bottom: 0;
+  bottom: 0px;
   left: 0;
-  background: #007aff;
   width: 100%;
-  padding: 15px 20px;
-  display: block;
-  transition: all 0.3s ease;
   z-index: 10;
-  &:hover {
-    opacity: 0.9;
+  background-color: #fff;
+
+  .yoo-add-in {
+    padding: 25px 15px;
+    display: block;
+    transition: all 0.3s ease;
+    background-color: #f2f2f6;
+    border: 1px solid #eaeaea;
+    border-radius: 4px;
+    text-align: center;
   }
 
-  h4 {
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.6);
-    font-weight: 400;
-    margin-bottom: 3px;
+  .yoo-add-thumb {
+    display: block;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    width: 160px;
+    margin: auto;
+    margin-bottom: 16px;
   }
 
-  h2 {
-    font-size: 18px;
-    color: #fff;
+  .yoo-add-title {
+    font-size: 16px;
+    color: #000;
     margin: 0;
+    font-weight: 500;
+    margin-bottom: 16px;
   }
 }
-.yoo-add + .yoo-sidebarheader-in .yoo-sidebar-nav{
-  padding-bottom: 110px;
+
+.yoo-sidebar-active {
+  .yoo-add {
+    display: none;
+  }
+
+  .yoo-add+.yoo-sidebarheader-in {
+    height: 100% !important;
+  }
 }
+
+pre {
+  margin: 0;
+  border: 1px solid $base-color4;
+  border-radius: 7px;
+  padding: 8px 15px;
+  background: #fff;
+}
+
+@media screen and (min-width: 991px) {
+  .yoo-add+.yoo-sidebarheader-in {
+    height: calc(100% - 260px) !important;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .yoo-add {
+    display: none;
+  }
+}
+
+// End Add
 @media screen and (max-width: 991px) {
 
   .tt-sticky-content-in {
