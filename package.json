@@ -1,6 +1,6 @@
 {
   "name": "idashboard",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Free admin template inspired by iOS design",
   "main": "index.js",
   "scripts": {
